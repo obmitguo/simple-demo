@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/list_item_bg_select"
+        android:orientation="vertical"
+        >
+        <RelativeLayout 
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            >
+         <ImageView 
+            android:id="@+id/iv_icon"
+            android:layout_height="45dp"
+            android:layout_width="45dp"
+            android:src="@drawable/ic_default"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            />
+         <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:paddingTop="8dp"
+             android:text="应用名称" 
+             android:textColor="#000"
+             android:id="@+id/tv_name"
+             android:layout_toRightOf="@id/iv_icon"
+             />
+         <RatingBar 
+             android:id="@+id/rb_pro"
+             android:layout_height="15dp"
+             android:layout_width="wrap_content"
+             android:layout_toRightOf="@id/iv_icon"
+             android:rating="3"
+             android:progressDrawable="@drawable/custom_ratingbar"
+             android:isIndicator="true"
+             android:layout_below="@id/tv_name"
+             
+             />
+          <TextView
+              android:singleLine="true"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:text="3.70MB" 
+             android:layout_below="@id/rb_pro"
+             android:textColor="#000"
+             android:id="@+id/tv_memor"
+             android:layout_toRightOf="@id/iv_icon"
+             />
+          
+          <LinearLayout 
+              android:padding="13dp"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_alignParentRight="true"
+              android:gravity="center"
+              android:orientation="vertical"
+              >
+              <FrameLayout 
+                  android:id="@+id/fl_progress"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  />
+              <TextView 
+                  android:id="@+id/tv_download"
+                  android:layout_gravity="center"
+                  android:text="下载"
+                  android:textColor="#000"
+                  android:layout_height="wrap_content"
+                  android:layout_width="wrap_content"
+                  />
+          </LinearLayout>
+        </RelativeLayout>
+        
+        <View
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="#8000" />
+
+        <TextView
+            android:id="@+id/tv_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="赵佳彤真帅巴拉拉拉巴拉巴拉巴拉拉比巴拉拉拉巴拉巴拉巴拉拉比巴拉拉拉巴拉巴拉巴拉拉比巴拉拉拉巴拉巴拉巴拉拉比巴拉拉拉巴拉巴拉巴拉拉比巴拉拉拉巴拉巴拉巴拉拉比小魔仙"
+            android:textColor="#8000"
+            android:textSize="16sp" />
+       		 
+    </LinearLayout>
+</LinearLayout>
